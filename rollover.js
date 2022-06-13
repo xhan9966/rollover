@@ -20,11 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
       image.src = oldURL;
     });
 
-    // setup timer.
+    // setup timer to cause rollover images to be displayed one second after the page is loaded
     setTimeout(() => {
       image.src = newURL;
     }, 1000);
 
+    // setup timer to cause the original images to be displayed again two seconds after the page is loaded
     setTimeout(() => {
       image.src = oldURL;
     }, 2000);
